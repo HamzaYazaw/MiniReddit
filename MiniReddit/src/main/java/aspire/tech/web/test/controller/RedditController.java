@@ -10,4 +10,9 @@ public class RedditController {
 	public String indexPage() {
 		return "index";
 	}
+	
+	@GetMapping(value ="/dashboard")
+	public String dash() {
+		return "dashboard";
+	}
 }
