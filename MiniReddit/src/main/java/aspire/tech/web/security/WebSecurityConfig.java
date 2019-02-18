@@ -27,12 +27,13 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter{
 	
 	@Override
 	protected void configure(HttpSecurity http) throws Exception {
-		http.csrf().disable()
-			.authorizeRequests()
+//		.csrf().disable()
+		http.authorizeRequests()
 				   .antMatchers("/").permitAll()			//Can't access /dashboard because of the permits
 				   .anyRequest().hasRole("USER").and()
 			.formLogin()
 				   .loginPage("/login")
+				   .defaultSuccessUrl("/dashboard")
 				   .permitAll()
 				   .and()
 			.logout()
