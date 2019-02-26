@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="http://thymeleaf.org">
+	<head>
+		<meta charset="ISO-8859-1">
+		<title>Aspire Reddit Thread</title>
+	</head>
+	<!-- 
+		We added the product != null because it has read null and gave exception handling with error 500 except the 404
+	 -->
+	<body>
+		<div class="container" th:if="${product != null}">
+			<h1>Thread</h1>
+			<div th:text="|Is product published: ${product.published}|">
+				Here is the div content
+			</div>
+		</div>
+	</body>
+</html>

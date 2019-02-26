@@ -21,7 +21,10 @@ public class UserService {
 	 * This save method saves a User into the database
 	 */
 	
-	public User save(User user) {
+	public User save(User user)  {
+
+		
+		
 		/*
 		 * This encodes the password first
 		 */
@@ -37,5 +40,6 @@ public class UserService {
 		user.getAuthorities().add(authority);
 		
 		return userRepo.save(user);
+		
 	}
 }
