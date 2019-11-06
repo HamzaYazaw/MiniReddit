@@ -1,10 +1,6 @@
 # Pull Request Template 
-## CIE-XXX: <ticket-summary>
+## CIE-XXX: ticket-summary
 ---
 
 - [ ] Ensure naming conventions are followed
 - [ ] Ensure unit tests are done
-
-
---- 
-Author: Hamza Yazaw :octocat:
