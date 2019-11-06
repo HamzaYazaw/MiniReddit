@@ -1,5 +1,5 @@
-# Pull Request Template 
-## CIE-XXX: ticket-summary
+# Github Pull Request Template 
+### CIE-XXX: ticket-summary
 ---
 
 - [ ] Ensure naming conventions are followed
